@@ -1,0 +1,16 @@
+.about {
+    &-infos {
+        display: flex;
+        align-items: center;
+        padding: 2em 5em;
+        background-color: $grey;
+
+        .reveal-left, .reveal-right {
+            width: 50%;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+}

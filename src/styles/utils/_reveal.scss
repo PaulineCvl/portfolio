@@ -1,0 +1,32 @@
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+.reveal-left-visible {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s;
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.reveal-right-visible {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s;
+}
+
+.reveal-boxes {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.reveal-boxes-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
+}

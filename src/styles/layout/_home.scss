@@ -1,0 +1,22 @@
+.home {
+    &-banner {
+        position: fixed;
+        width: 100%;
+        background-color: #000;
+    }
+
+    &-content {
+        padding-top: 38%;
+    }
+
+    &-header {
+        position: sticky;
+        top: 0;
+        background-color: $white;
+        z-index: 1;
+    }
+
+    &-infos {
+        position: relative;
+    }
+}

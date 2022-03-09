@@ -1,0 +1,56 @@
+.career {
+    padding: 5em;
+    background-color: $grey;
+
+    h2 {
+        width: 50%;
+    }
+}
+
+.qualifications {
+    display: flex;
+    margin: 5em 3em;
+    justify-content: space-between;
+
+    & > div {
+        width: 20%;
+
+        p {
+            text-align: start;
+        }
+    }
+}
+
+.qualification {
+    &-date {
+        font-family: 'RalewayBlack';
+        position: relative;
+        padding-inline-start: 2em;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: $color-secondary;
+        }
+    }
+}
+
+#developper {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: -5px;
+        width: 146px;
+        height: 15px;
+        background-color: rgba(238, 200, 67, 0.8);
+        z-index: -1;
+    }
+}

@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+
+    ul {
+        width: 40%;
+        margin: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    a {
+        text-transform: uppercase;
+        font-family: 'RalewayBold';
+        padding: 0.5em;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+#contact {
+    outline: solid 3px $color-primary;
+    color: $color-primary;
+    font-family: 'RalewayBlack';
+}
