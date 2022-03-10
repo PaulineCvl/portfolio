@@ -1,12 +1,43 @@
 .about {
+    padding: 2em 15em;
+    background-color: $grey;
+
+    @media #{$breakpoint-small} {
+        padding: 2em 8em;
+    }
+    
+    @media #{$breakpoint-x-small} {
+        padding: 2em 3em;
+    }
+
+    @media #{$breakpoint-medium}, #{$breakpoint-large} {
+        padding: 2em 10em;
+    }
+
+    @media #{$breakpoint-x-large} {
+        padding: 2em 20em;
+    }
+
+    @media #{$breakpoint-xx-large} {
+        padding: 2em 25em;
+    }
+
     &-infos {
         display: flex;
         align-items: center;
-        padding: 2em 5em;
-        background-color: $grey;
+
+        @media #{$breakpoint-small}, #{$breakpoint-medium} {
+            display: inline-block;
+        }
 
         .reveal-left, .reveal-right {
             width: 50%;
+
+            @media #{$breakpoint-small}, #{$breakpoint-medium} {
+                width: 100%;
+                margin: auto;
+                padding-top: 2em;
+            }
         }
 
         p {

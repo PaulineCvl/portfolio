@@ -12,12 +12,19 @@ const Home = () => {
     useEffect(() => {
         const banner = document.querySelector(".banner");
         const header = document.querySelector(".header");
+        const bannerHeight = header.getBoundingClientRect().top;
+        banner.style.height = bannerHeight + "px";
         let opacity = 1;
 
         window.addEventListener("scroll", () => {
             const distanceHeaderToTop = header.getBoundingClientRect().top;
             opacity = distanceHeaderToTop / banner.offsetHeight;
             banner.style.opacity = opacity;
+        })
+
+        window.addEventListener("resize", () => {
+            const bannerHeight = header.getBoundingClientRect().top;
+            banner.style.height = bannerHeight + "px";
         })
     }, [])
 

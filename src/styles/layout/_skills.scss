@@ -1,14 +1,47 @@
 .skills {
     padding-top: 2em;
-    background-color: $grey;
 
     &-percentages {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
-        width: 70%;
+        width: 100%;
         margin: auto;
         padding: 2em 0;
+
+        @media #{$breakpoint-small}, #{$breakpoint-medium} {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        @media #{$breakpoint-xx-large} {
+            padding: 5em 0;
+        }
+
+        &-1 {
+            @media #{$breakpoint-x-small} {
+                flex-wrap: wrap;
+            }
+        }
+
+        &-2 {
+            @media #{$breakpoint-x-small} {
+                flex-wrap: wrap-reverse;
+                margin-top: -14.5em !important;
+                flex-direction: row-reverse;
+            }
+        }
+
+        & > div {
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+
+            @media #{$breakpoint-small}, #{$breakpoint-medium} {
+                width: 100%;
+                margin: 2em 0;
+                justify-content: space-between;
+            }
+        }
     }
 }
 .percentage {
@@ -37,7 +70,7 @@
         margin: 0;
         font-size: 24px;
         display: flex;
-        align-items: end;
+        align-items: flex-end;
     }
 
     span {
@@ -49,6 +82,18 @@
 .percent {
     &-75, &-50, &-40, &-30 {
         stroke-dashoffset: 315;
+
+        @media #{$breakpoint-x-small} {
+            margin: 1em 0;
+        }
+
+        @media #{$breakpoint-medium}, #{$breakpoint-x-large} {
+            transform: scale(1.2);
+        }
+
+        @media #{$breakpoint-xx-large} {
+            transform: scale(1.5);
+        }
     }
 }
 

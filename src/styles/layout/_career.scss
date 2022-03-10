@@ -1,6 +1,26 @@
 .career {
-    padding: 5em;
     background-color: $grey;
+    padding: 5em 15em;
+
+    @media #{$breakpoint-small} {
+        padding: 5em 8em;
+    }
+
+    @media #{$breakpoint-x-small} {
+        padding: 5em 3em;
+    }
+
+    @media #{$breakpoint-large}, #{$breakpoint-medium} {
+        padding: 5em 10em;
+    }
+    
+    @media #{$breakpoint-x-large} {
+        padding: 5em 20em;
+    }
+
+    @media #{$breakpoint-xx-large} {
+        padding: 5em 25em;
+    }
 
     h2 {
         width: 50%;
@@ -9,11 +29,29 @@
 
 .qualifications {
     display: flex;
-    margin: 5em 3em;
+    margin: 5em 0;
     justify-content: space-between;
 
+    @media #{$breakpoint-x-small} {
+        margin: 1em 0;
+    }
+
+    @media #{$breakpoint-small}, #{$breakpoint-medium} {
+        flex-direction: column;
+    }
+
     & > div {
-        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+
+        @media #{$breakpoint-x-small} {
+            flex-direction: column;
+        }
+
+        @media #{$breakpoint-small}, #{$breakpoint-medium} {
+            width: 100%;
+        }
 
         p {
             text-align: start;
@@ -22,6 +60,15 @@
 }
 
 .qualification {
+    &-1, &-2, &-3, &-4 {
+        width: 50%;
+        padding: 1em;
+
+        @media #{$breakpoint-x-small} {
+            width: 100%;
+        }
+    }
+
     &-date {
         font-family: 'RalewayBlack';
         position: relative;
@@ -40,17 +87,7 @@
 }
 
 #developper {
-    position: relative;
-    z-index: 1;
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 25px;
-        left: -5px;
-        width: 146px;
-        height: 15px;
+    span {
         background-color: rgba(238, 200, 67, 0.8);
-        z-index: -1;
     }
 }

@@ -17,6 +17,10 @@ h3 {
     font-family: 'RalewayBold';
     color: $black;
     text-transform: uppercase;
+
+    @media #{$breakpoint-small}, #{$breakpoint-medium} {
+        text-align: start;
+    }
 }
 
 li {

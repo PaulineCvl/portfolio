@@ -1,6 +1,26 @@
 .contact {
-    padding: 1em 0 4em;
+    padding: 1em 15em 4em;
     background-color: $color-primary;
+
+    @media #{$breakpoint-small} {
+        padding: 1em 8em 4em;
+    }
+
+    @media #{$breakpoint-x-small} {
+        padding: 1em 3em 4em;
+    }
+
+    @media #{$breakpoint-large}, #{$breakpoint-medium} {
+        padding: 1em 10em 4em;
+    }
+    
+    @media #{$breakpoint-x-large} {
+        padding: 1em 20em 4em;
+    }
+
+    @media #{$breakpoint-xx-large} {
+        padding: 1em 25em 4em;
+    }
 
     h2 {
         width: 50%;
@@ -12,6 +32,16 @@
         display: flex;
         justify-content: space-around;
 
+        @media #{$breakpoint-small}, #{$breakpoint-medium} {
+            flex-direction: column;
+            margin-top: 3em;
+        }
+
+        @media #{$breakpoint-large} {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
         & > div {
             text-align: start;
             display: flex;
@@ -21,6 +51,17 @@
             outline: solid 3px $grey;
             color: $grey;
             position: relative;
+            margin: 0 1em;
+
+            @media #{$breakpoint-small}, #{$breakpoint-medium} {
+                width: 100%;
+                justify-content: center;
+                margin: 1em 0;
+            }
+
+            @media #{$breakpoint-large} {
+                margin: 1em;
+            }
         }
 
         a {
@@ -66,6 +107,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media #{$breakpoint-small}, #{$breakpoint-medium} {
+        padding-bottom: 5em;
+    }
 
     button {
         padding: 1em;

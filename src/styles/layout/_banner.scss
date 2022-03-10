@@ -2,13 +2,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 575px;
     margin: auto;
     box-shadow: inset 0 0 80px $black;
     background-color: $grey;
+
+    &-image, &-infos {
+        width: 35%;
+
+        @media #{$breakpoint-x-large} {
+            width: 30%;
+        }
+    }
     
     &-image {
-        width: 35%;
         height: 100%;
 
         img {
@@ -18,17 +24,36 @@
     }
 
     &-infos {
-        width: 35%;
 
         h1 {
             margin: 1em 0 0 0;
             text-transform: uppercase;
             font-family: 'RalewayBlack';
+
+            @media #{$breakpoint-small} {
+                font-size: 20px;
+            }
+
+            @media #{$breakpoint-x-small} {
+                font-size: 12px;
+            }
+
+            @media #{$breakpoint-medium} {
+                font-size: 24px;
+            }
         }
 
         p {
             font-size: 24px;
             margin: 0.5em;
+
+            @media #{$breakpoint-small}, #{$breakpoint-medium} {
+                font-size: 18px;
+            }
+
+            @media #{$breakpoint-x-small} {
+                font-size: 11px;
+            }
         }
 
         &__contact {
@@ -37,6 +62,21 @@
             height: 35px;
             width: 25%;
             margin: 1em auto;
+
+            @media #{$breakpoint-small} {
+                height: 25px;
+                width: 30%;
+            }
+
+            @media #{$breakpoint-x-small} {
+                height: 20px;
+                width: 50%;
+            }
+
+            @media #{$breakpoint-medium} {
+                height: 30px;
+                width: 35%;
+            }
             
             img {
                 height: 100%;

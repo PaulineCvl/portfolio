@@ -28,21 +28,25 @@ const Career = () => {
         <div id="parcours" className='career'>
             <h2>Parcours</h2>
             <div className='qualifications'>
-                <div className='qualification-1 reveal-left'>
-                    <p className='qualification-date'>2017</p>
-                    <p>Obtention de mon BTS Communication</p>
+                <div>
+                    <div className='qualification-1 reveal-left'>
+                        <p className='qualification-date'>2017</p>
+                        <p>Obtention de mon BTS Communication</p>
+                    </div>
+                    <div className='qualification-2 reveal-left'>
+                        <p className='qualification-date'>2018</p>
+                        <p>Obtention de ma Licence Information et Communication</p>
+                    </div>
                 </div>
-                <div className='qualification-2 reveal-left'>
-                    <p className='qualification-date'>2018</p>
-                    <p>Obtention de ma Licence Information et Communication</p>
-                </div>
-                <div className='qualification-3 reveal-left'>
-                    <p className='qualification-date'>2020</p>
-                    <p>Obtention de mon Master Stratégie d'Innovation et Communication</p>
-                </div>
-                <div className='qualification-4 reveal-left'>
-                    <p className='qualification-date'>2022</p>
-                    <p id='developper'>Obtention de mon diplôme de développeuse web</p>
+                <div>
+                    <div className='qualification-3 reveal-left'>
+                        <p className='qualification-date'>2020</p>
+                        <p>Obtention de mon Master Stratégie d'Innovation et Communication</p>
+                    </div>
+                    <div className='qualification-4 reveal-left'>
+                        <p className='qualification-date'>2022</p>
+                        <p id='developper'>Obtention de mon diplôme de <span>développeuse web</span></p>
+                    </div>
                 </div>
             </div>
         </div>

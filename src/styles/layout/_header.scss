@@ -4,10 +4,10 @@
     padding: 1em 0;
 
     ul {
-        width: 40%;
+        padding: 0;
         margin: 1em;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-end;
     }
 
@@ -15,9 +15,19 @@
         text-transform: uppercase;
         font-family: 'RalewayBold';
         padding: 0.5em;
+        margin: 0 1em;
         text-decoration: none;
         color: black;
         cursor: pointer;
+
+        @media #{$breakpoint-small} {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        @media #{$breakpoint-x-small} {
+            font-size: 11px;
+        }
     }
 }
 
@@ -25,4 +35,8 @@
     outline: solid 3px $color-primary;
     color: $color-primary;
     font-family: 'RalewayBlack';
+
+    @media #{$breakpoint-small} {
+        margin-left: 1em;
+    }
 }

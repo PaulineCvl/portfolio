@@ -106,59 +106,63 @@ const About = () => {
             <div className='skills'>
                 <h3>Compétences</h3>
                 <div className='skills-percentages'>
-                    <div className='percent-75'>
-                        <div className='percentage'>
-                            <svg>
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <p>75<span>%</span></p>
+                    <div className='skills-percentages-1'>
+                        <div className='percent-75'>
+                            <div className='percentage'>
+                                <svg>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <p>75<span>%</span></p>
+                            </div>
+                            <p>HTML / CSS</p>
                         </div>
-                        <p>HTML / CSS</p>
+                        <div className='percent-50'>
+                            <div className='percentage'>
+                                <svg>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <p>50<span>%</span></p>
+                            </div>
+                            <p>Javascript</p>
+                        </div>
+                        <div className='percent-30'>
+                            <div className='percentage'>
+                                <svg>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <p>30<span>%</span></p>
+                            </div>
+                            <p>React</p>
+                        </div>
                     </div>
-                    <div className='percent-50'>
-                        <div className='percentage'>
-                            <svg>
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <p>50<span>%</span></p>
+                    <div className='skills-percentages-2'>
+                        <div className='percent-50'>
+                            <div className='percentage'>
+                                <svg>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <p>50<span>%</span></p>
+                            </div>
+                            <p>Node.js</p>
                         </div>
-                        <p>Javascript</p>
-                    </div>
-                    <div className='percent-30'>
-                        <div className='percentage'>
-                            <svg>
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <p>30<span>%</span></p>
+                        <div className='percent-40'>
+                            <div className='percentage'>
+                                <svg>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <p>40<span>%</span></p>
+                            </div>
+                            <p>MySQL</p>
                         </div>
-                        <p>React</p>
-                    </div>
-                    <div className='percent-50'>
-                        <div className='percentage'>
-                            <svg>
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <p>50<span>%</span></p>
+                        <div className='percent-40'>
+                            <div className='percentage'>
+                                <svg>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </svg>
+                                <p>40<span>%</span></p>
+                            </div>
+                            <p>MongoDB</p>
                         </div>
-                        <p>Node.js</p>
-                    </div>
-                    <div className='percent-40'>
-                        <div className='percentage'>
-                            <svg>
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <p>40<span>%</span></p>
-                        </div>
-                        <p>MySQL</p>
-                    </div>
-                    <div className='percent-40'>
-                        <div className='percentage'>
-                            <svg>
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <p>40<span>%</span></p>
-                        </div>
-                        <p>MongoDB</p>
                     </div>
                 </div>
             </div>
