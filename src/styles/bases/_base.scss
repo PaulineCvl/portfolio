@@ -11,6 +11,10 @@ h2 {
     text-transform: uppercase;
     color: $color-primary;
     margin: 0;
+
+    @media #{$breakpoint-xx-small} {
+        font-size: 14px;
+    }
 }
 
 h3 {
@@ -21,8 +25,18 @@ h3 {
     @media #{$breakpoint-small}, #{$breakpoint-medium} {
         text-align: start;
     }
+
+    @media #{$breakpoint-xx-small} {
+        font-size: 12px;
+    }
 }
 
 li {
     list-style: none;
+}
+
+p {
+    @media #{$breakpoint-xx-small} {
+        font-size: 10px;
+    }
 }

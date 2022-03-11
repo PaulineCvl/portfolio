@@ -10,6 +10,10 @@
         padding: 1em 3em 4em;
     }
 
+    @media #{$breakpoint-xx-small} {
+        padding: 1em 1em 4em;
+    }
+
     @media #{$breakpoint-large}, #{$breakpoint-medium} {
         padding: 1em 10em 4em;
     }
@@ -35,6 +39,10 @@
         @media #{$breakpoint-small}, #{$breakpoint-medium} {
             flex-direction: column;
             margin-top: 3em;
+        }
+
+        @media #{$breakpoint-xx-small} {
+            margin-top: 1em;
         }
 
         @media #{$breakpoint-large} {
@@ -67,6 +75,14 @@
         a {
             text-decoration: none;
             color: $grey;
+
+            @media #{$breakpoint-x-small} {
+                font-size: 11px;
+            }
+
+            @media #{$breakpoint-xx-small} {
+                font-size: 10px;
+            }
         }
 
         img {
@@ -99,6 +115,13 @@
         width: 20px;
         background-color: $color-secondary;
         animation: square 1s 100ms ease-in-out;
+
+        @media #{$breakpoint-xx-small} {
+            height: 10px;
+            width: 10px;
+            bottom: 5px;
+            right: -5px;
+        }
     }
 }
 
@@ -112,10 +135,18 @@
         padding-bottom: 5em;
     }
 
+    @media #{$breakpoint-xx-small} {
+        padding-bottom: 2em;
+    }
+
     button {
         padding: 1em;
         background-color: rgba(238, 236, 188, 0.5);
         border: none;
+
+        @media #{$breakpoint-xx-small} {
+            padding: 0.2em 1em 0.8em;
+        }
     }
 
     svg {
@@ -123,5 +154,9 @@
         color: $color-primary;
         margin: -15px;
         cursor: pointer;
+
+        @media #{$breakpoint-xx-small} {
+            font-size: 30px;
+        }
     }
 }

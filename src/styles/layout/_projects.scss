@@ -10,6 +10,10 @@
         padding: 5em 3em;
     }
 
+    @media #{$breakpoint-xx-small} {
+        padding: 5em 1em;
+    }
+
     @media #{$breakpoint-large}, #{$breakpoint-medium} {
         padding: 5em 9em;
     }
@@ -33,7 +37,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1em 0;
+    padding: 3em 0;
 
     @media #{$breakpoint-small} {
         flex-direction: column;
@@ -42,34 +46,23 @@
 
     & > div {
         width: 33%;
-        height: 250px;
         padding: 1em;
-        margin: 3em 0;
         position: relative;
-
         
         @media #{$breakpoint-small} {
             width: 100%;
-            height: 300px;
-        }
-
-        @media #{$breakpoint-x-small} {
-            height: 250px;
         }
 
         @media #{$breakpoint-medium} {
             width: 50%;
-            height: 230px;
         }
 
         @media #{$breakpoint-x-large} {
             width: 49%;
-            height: 350px;
         }
 
         @media #{$breakpoint-xx-large} {
             width: 33%;
-            height: 400px;
         }
     }
 
@@ -81,7 +74,6 @@
 }
 
 .hover-project {
-    visibility: hidden;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -119,14 +111,77 @@
     }
 }
 
+.hover-project--visible {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(238, 236, 188, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: visible-project 350ms ease-in;
+
+    button {
+        font-family: 'RalewayBold';
+        color: $color-primary;
+        background-color: $color-secondary;
+        padding: 0.8em 1em;
+        border-style: none;
+        border-radius: 5px;
+        margin: 0.5em;
+        animation: visible-button 350ms ease-in;
+        cursor: pointer;
+
+        svg {
+            margin-left: 0.5em;
+            margin-top: 0.1em;
+        }
+    }
+
+    .github-project {
+        color: $grey;
+        background-color: $color-primary;
+    }
+}
+
 .project {
     &-image {
-        height: 100%;
+        height: 250px;
         position: relative;
+
+        @media #{$breakpoint-x-small}, #{$breakpoint-small} {
+            margin-top: 1em;
+        }
+
+        @media #{$breakpoint-small} {
+            height: 300px;
+        }
+
+        @media #{$breakpoint-x-small} {
+            height: 250px;
+        }
+
+        @media #{$breakpoint-xx-small} {
+            height: 150px;
+        }
+
+        @media #{$breakpoint-medium} {
+            height: 230px;
+        }
+
+        @media #{$breakpoint-x-large} {
+            height: 350px;
+        }
+
+        @media #{$breakpoint-xx-large} {
+            height: 400px;
+        }
 
         &:hover {
             .hover-project {
-                visibility: visible;
                 opacity: 1;
                 cursor: pointer;
 
@@ -142,6 +197,10 @@
         padding: 0.5em;
         height: 85px;
 
+        @media #{$breakpoint-x-small}, #{$breakpoint-small} {
+            height: fit-content;
+        }
+
         span {
             font-family: 'RalewayBold';
         }
@@ -153,6 +212,23 @@
         p {
             margin: 0.5em;
             font-size: 14px;
+
+            @media #{$breakpoint-xx-small} {
+                font-size: 12px;
+            }
+        }
+
+        button {
+            visibility: hidden;
+
+            @media #{$breakpoint-x-small}, #{$breakpoint-small} {
+                visibility: visible;
+                padding: 0.3em 0.4em 0.2em;
+                margin: 0.5em;
+                border: solid 3px $color-primary;
+                color: $color-primary;
+                background-color: transparent;
+            }
         }
     }
 }

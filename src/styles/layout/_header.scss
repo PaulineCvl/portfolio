@@ -3,12 +3,21 @@
     justify-content: center;
     padding: 1em 0;
 
+    @media #{$breakpoint-xx-small} {
+        padding: 0;
+    }
+
     ul {
         padding: 0;
         margin: 1em;
         display: flex;
         justify-content: center;
         align-items: flex-end;
+
+        @media #{$breakpoint-xx-small} {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     a {
@@ -28,6 +37,11 @@
         @media #{$breakpoint-x-small} {
             font-size: 11px;
         }
+
+        @media #{$breakpoint-xx-small} {
+            margin: 0.3em;
+            font-size: 8px;
+        }
     }
 }
 
@@ -38,5 +52,9 @@
 
     @media #{$breakpoint-small} {
         margin-left: 1em;
+    }
+
+    @media #{$breakpoint-xx-small} {
+        margin-top: 0.5em;
     }
 }

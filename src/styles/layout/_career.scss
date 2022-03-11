@@ -10,6 +10,10 @@
         padding: 5em 3em;
     }
 
+    @media #{$breakpoint-xx-small} {
+        padding: 2em 1em;
+    }
+
     @media #{$breakpoint-large}, #{$breakpoint-medium} {
         padding: 5em 10em;
     }
@@ -82,6 +86,11 @@
             height: 20px;
             width: 20px;
             background-color: $color-secondary;
+
+            @media #{$breakpoint-xx-small} {
+                height: 10px;
+                width: 10px;
+            }
         }
     }
 }

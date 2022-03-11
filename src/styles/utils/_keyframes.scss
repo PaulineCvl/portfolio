@@ -11,6 +11,24 @@
     }
 }
 
+@keyframes visible-project {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes visible-button {
+    0% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 @keyframes percentage-30 {
     0% {
         stroke-dashoffset: 315;

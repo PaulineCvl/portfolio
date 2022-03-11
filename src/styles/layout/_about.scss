@@ -10,6 +10,10 @@
         padding: 2em 3em;
     }
 
+    @media #{$breakpoint-xx-small} {
+        padding: 2em 1em;
+    }
+
     @media #{$breakpoint-medium}, #{$breakpoint-large} {
         padding: 2em 10em;
     }

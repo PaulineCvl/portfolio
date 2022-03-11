@@ -35,7 +35,11 @@
             }
 
             @media #{$breakpoint-x-small} {
-                font-size: 12px;
+                font-size: 11px;
+            }
+
+            @media #{$breakpoint-xx-small} {
+                font-size: 6px;
             }
 
             @media #{$breakpoint-medium} {
@@ -54,6 +58,10 @@
             @media #{$breakpoint-x-small} {
                 font-size: 11px;
             }
+
+            @media #{$breakpoint-xx-small} {
+                font-size: 6px;
+            }
         }
 
         &__contact {
@@ -71,6 +79,11 @@
             @media #{$breakpoint-x-small} {
                 height: 20px;
                 width: 50%;
+            }
+
+            @media #{$breakpoint-xx-small} {
+                margin: auto;
+                height: 10px;
             }
 
             @media #{$breakpoint-medium} {
@@ -92,11 +105,19 @@
     flex-direction: column;
     align-items: center;
 
+    @media #{$breakpoint-xx-small} {
+        padding-bottom: 1em;
+    }
+
     svg {
         font-size: 50px;
         color: $color-primary;
         margin: -15px;
         animation: arrow 2500ms infinite;
         cursor: pointer;
+
+        @media #{$breakpoint-xx-small} {
+            font-size: 30px;
+        }
     }
 }
