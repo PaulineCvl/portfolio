@@ -45,6 +45,21 @@
     }
 }
 
+.active {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        right: 5px;
+        width: 10px;
+        height: 10px;
+        background-color: $color-secondary;
+        animation: active 350ms ease-in-out;
+    }
+}
+
 #contact {
     outline: solid 3px $color-primary;
     color: $color-primary;

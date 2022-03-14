@@ -11,6 +11,14 @@
     }
 }
 
+@keyframes active {
+    0% {
+        transform: translateX(-100px);
+    } 100% {
+        transform: translateX(0);
+    }
+}
+
 @keyframes visible-project {
     0% {
         opacity: 0;
